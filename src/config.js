@@ -87,18 +87,18 @@ export const CONFIG = {
   pinnedProjects: [
     {
       id: 1,
-      title: 'AI Document Assistant',
+      title: 'Grants Agent',
       subtitle: 'RAG System',
       description:
-        'Document intelligence assistant that answers questions across internal PDFs and notes using retrieval-augmented generation.',
+        'AI-powered RAG agent for Swedish research funding, ask natural questions and get source grounded answers across 3,400+ grants from Vinnova, Formas, Horizon Europe and more. Built during internship at RISE Research Institutes of Sweden.',
       bullets: [
-        'Semantic chunking, embeddings & vector retrieval',
-        'Source-grounded answers with citations',
-        'Upload → query → feedback workflow',
+        'Semantic search over 3,400+ real grant listings using pgvector + OpenAI embeddings',
+        'Conversation memory with Redis for multi-turn dialogue',
+        'Real-time streaming responses via FastAPI + SSE',
       ],
       tags: ['Python', 'FastAPI', 'pgvector', 'OpenAI'],
-      private: true,
-      repoUrl: null,
+      private: false,
+      repoUrl: 'https://github.com/AliAlkhamasi/GrantsAgent', 
     },
     {
       id: 2,
