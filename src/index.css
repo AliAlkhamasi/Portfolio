@@ -305,7 +305,7 @@ nav.scrolled {
 .feat-footer {
   padding: 16px 26px 22px;
   border-top: 1px solid var(--border);
-  display: flex; gap: 10px;
+  display: flex; justify-content: center; gap: 10px;
 }
 .feat-btn {
   font-family: var(--f-display); font-weight: 600; font-size: 12px;

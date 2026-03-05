@@ -199,7 +199,17 @@ function FeaturedCard({ proj, index }) {
     <div className={`feat-card reveal${delay}`} data-hover="true">
       <div className="feat-header">
         <span className="feat-num">{String(index + 1).padStart(2, '0')}</span>
-        {proj.private && <span className="feat-badge">Private</span>}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          {proj.private && <span className="feat-badge">Private</span>}
+          <a
+            href={proj.repoUrl ?? `https://github.com/${CONFIG.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`feat-btn feat-btn-primary${proj.private && !proj.repoUrl ? ' feat-btn-dim' : ''}`}
+          >
+            GitHub →
+          </a>
+        </div>
       </div>
 
       <div className="feat-body">
@@ -216,23 +226,6 @@ function FeaturedCard({ proj, index }) {
         <div className="feat-tags">
           {proj.tags.map(t => <span key={t} className="feat-tag">{t}</span>)}
         </div>
-      </div>
-
-      <div className="feat-footer">
-        <a
-          href={proj.repoUrl ?? `https://github.com/${CONFIG.github}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`feat-btn feat-btn-primary${proj.private && !proj.repoUrl ? ' feat-btn-dim' : ''}`}
-        >
-          GitHub →
-        </a>
-        <a
-          href={`mailto:${CONFIG.email}?subject=Demo request: ${proj.title}`}
-          className="feat-btn feat-btn-secondary"
-        >
-          Demo on request
-        </a>
       </div>
     </div>
   )
@@ -304,7 +297,7 @@ function Projects() {
           )}
         </div>
         <a
-          href={`https://github.com/${CONFIG.github}`}
+          href={`https://github.com/AliAlkhamasi`}
           target="_blank" rel="noopener noreferrer"
           className="arrow-link"
         >
