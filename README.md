@@ -9,8 +9,11 @@ My name is Ali and I'm an AI Engineer with hands-on experience building AI agent
 ### Stack
 
 **Languages:** Python · SQL · C# · JavaScript
+
 **AI/ML:** Agentic Systems · RAG · Computer Vision · Machine Learning
+
 **LLMs & VLMs:** Claude · OpenAi · Gemini 2.5 Flash · Qwen-VL · Moondream3
+
 **Backend:** FastAPI · PostgreSQL · pgvector · Redis · Docker · Git
 
 ---
