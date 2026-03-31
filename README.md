@@ -26,6 +26,9 @@ Multi-agent computer vision system for visual analysis across different use case
 **TARS Vision Agent**
 Real time vision assistant combining YOLOv8 object detection, GPT-4o vision-language reasoning, and wake-word voice control. Adjustable personality, humor, sarcasm, and honesty levels.
 
+**Research Chat**
+Multiagent RAG pipeline with three agents each running their own tool use loop — query rewriting, retrieval with page-cited answers, and critique-driven regeneration. FastAPI, Redis, sentence-transformers.
+
 **GrantsBot** *(internship at RISE)*
 RAG agent for Swedish research funding — scrapes 7+ agencies, embeds with pgvector, and streams answers with source-grounded retrieval. FastAPI, PostgreSQL, Redis.
 
